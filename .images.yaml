@@ -1,0 +1,11 @@
+target:
+  host: ghcr.io
+  repository: stackhpc
+  auth:
+    username: ${{ github.actor }}
+    password: ${{ secrets.GITHUB_TOKEN }}
+sources:
+- repository: calico/cni
+  tag: v3.21.2
+- repository: calico/node
+  tag: v3.21.2
