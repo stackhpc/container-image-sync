@@ -9,3 +9,5 @@ sources:
   tag: v3.21.2
 - repository: calico/node
   tag: v3.21.2
+- repository: calico/pod2daemon-flexvol
+  tag: v3.21.2
