@@ -1,0 +1,30 @@
+name: Sync Container images
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+       - name: Checkout
+         uses: actions/checkout@v2
+
+       - name: Fetch history
+         run: git fetch --prune --unshallow
+
+       - name: Prepare Go
+         uses: actions/setup-go@v2
+         with:
+           go-version: '^1.17.0'
+
+       - name: Install sinker
+         run: go install github.com/plexsystems/sinker@latest
+
+       - name: Pull images
+         run: sinker pull
+
+       - name: Push images
+         run: sinker push
