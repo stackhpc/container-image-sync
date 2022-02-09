@@ -26,5 +26,8 @@ jobs:
        - name: Pull images
          run: sinker pull
 
+       - name: Push images (dry-run)
+         run: sinker push --dryrun
+
        - name: Push images
          run: sinker push
