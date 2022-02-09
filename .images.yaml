@@ -2,8 +2,8 @@ target:
   host: ghcr.io
   repository: stackhpc
   auth:
-    username: ${{ github.actor }}
-    password: ${{ secrets.GITHUB_TOKEN }}
+    username: GHCR_USERNAME
+    password: GHCR_PASSWORD
 sources:
 - repository: calico/cni
   tag: v3.21.2
