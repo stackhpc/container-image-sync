@@ -13,6 +13,8 @@ sources:
   tag: v3.21.2
 - repository: calico/pod2daemon-flexvol
   tag: v3.21.2
+- repository: openstackmagnum/cluster-autoscaler
+  tag: v1.22.0
 - repository: rancher/hyperkube
   tag: v1.21.9-rancher1
   target_tag: v1.21.9 
