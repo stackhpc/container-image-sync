@@ -22,7 +22,7 @@ jobs:
          uses: actions/checkout@master
          with:
            repository: mnasiadka/sinker
-           ref: refs/heads/ghcr_nested
+           ref: refs/heads/target-tag
 
        - name: Install sinker
          run: make build && cp ./sinker ../
