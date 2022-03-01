@@ -33,3 +33,4 @@ jobs:
 
        - name: Run sinker push (dry-run)
          run: ../sinker push --dryrun
+         continue-on-error: true
