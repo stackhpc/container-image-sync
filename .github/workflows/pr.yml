@@ -3,9 +3,12 @@ name: Check sinker config
 on:
   pull_request:
 
+permissions:
+  packages: write
+
 env:
-  GHCR_USERNAME: ${{ github.actor }}
-  GHCR_PASSWORD: ${{ secrets.GITHUB_TOKEN }}
+  GHCR_USERNAME: stackhpc-ci
+  GHCR_PASSWORD: ${{ secrets.GHCR_PAT }}
 
 jobs:
   check:
