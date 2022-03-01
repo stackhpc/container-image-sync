@@ -29,3 +29,17 @@ sources:
 - repository: ingress-nginx/kube-webhook-certgen
   host: k8s.gcr.io
   tag: v1.1.1
+- repository: prometheus-adapter/prometheus-adapter
+  host: k8s.gcr.io
+  tag: v0.9.1
+- repository: metrics-server/metrics-server
+  host: k8s.gcr.io
+  tag: v0.5.2
+- repository: prometheus-operator/prometheus-operator
+  host: quay.io
+  tag: v0.54.1
+- repository: kiwigrid/k8s-sidecar
+  host: quay.io
+  tag: 1.15.6
+- repository: grafana/grafana
+  tag: 8.3.6
