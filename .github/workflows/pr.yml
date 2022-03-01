@@ -3,6 +3,10 @@ name: Check sinker config
 on:
   pull_request:
 
+env:
+  GHCR_USERNAME: ${{ github.actor }}
+  GHCR_PASSWORD: ${{ secrets.GITHUB_TOKEN }}
+
 jobs:
   check:
     runs-on: ubuntu-latest
