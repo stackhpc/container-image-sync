@@ -3,6 +3,9 @@ name: Check sinker config
 on:
   pull_request:
 
+permissions:
+  packages: write
+
 jobs:
   check:
     runs-on: ubuntu-latest
