@@ -43,3 +43,9 @@ sources:
   tag: 1.15.6
 - repository: grafana/grafana
   tag: 8.3.6
+- repository: prometheus/prometheus
+  host: quay.io
+  tag: v2.33.4
+- repository: prometheus/alertmanager
+  host: quay.io
+  tag: v0.23.0
