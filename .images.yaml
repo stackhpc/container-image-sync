@@ -49,3 +49,6 @@ sources:
 - repository: prometheus/alertmanager
   host: quay.io
   tag: v0.23.0
+- repository: thanos/thanos
+  host: quay.io
+  tag: v0.24.0
