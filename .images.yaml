@@ -5,6 +5,7 @@ target:
     username: GHCR_USERNAME
     password: GHCR_PASSWORD
 sources:
+# Calico
 - repository: calico/cni
   tag: v3.21.2
 - repository: calico/kube-controllers
@@ -13,10 +14,52 @@ sources:
   tag: v3.21.2
 - repository: calico/pod2daemon-flexvol
   tag: v3.21.2
+
+# CoreDNS
+- repository: coredns/coredns
+  host: docker.io
+  tag: 1.8.7
+
+# Grafana
+- repository: grafana/grafana
+  tag: 8.3.6
+
+# ingress-nginx
+- repository: ingress-nginx/kube-webhook-certgen
+  host: k8s.gcr.io
+  tag: v1.1.1
+
+# k8s-sidecar
+- repository: kiwigrid/k8s-sidecar
+  host: quay.io
+  tag: 1.15.6
+
+# metrics-server
+- repository: metrics-server/metrics-server
+  host: k8s.gcr.io
+  tag: v0.5.2
+
+# openstackmagnum/cluster-autoscaler
 - repository: openstackmagnum/cluster-autoscaler
   tag: v1.22.0
 - repository: openstackmagnum/cluster-autoscaler
   tag: v1.23.0
+
+# Prometheus
+- repository: prometheus/alertmanager
+  host: quay.io
+  tag: v0.23.0
+- repository: prometheus/prometheus
+  host: quay.io
+  tag: v2.33.4
+- repository: prometheus-adapter/prometheus-adapter
+  host: k8s.gcr.io
+  tag: v0.9.1
+- repository: prometheus-operator/prometheus-operator
+  host: quay.io
+  tag: v0.54.1
+
+# Rancher Hyperkube
 - repository: rancher/hyperkube
   tag: v1.21.9-rancher1
   target_tag: v1.21.9 
@@ -26,32 +69,8 @@ sources:
 - repository: rancher/hyperkube
   tag: v1.23.4-rancher1
   target_tag: v1.23.4
-- repository: ingress-nginx/kube-webhook-certgen
-  host: k8s.gcr.io
-  tag: v1.1.1
-- repository: prometheus-adapter/prometheus-adapter
-  host: k8s.gcr.io
-  tag: v0.9.1
-- repository: metrics-server/metrics-server
-  host: k8s.gcr.io
-  tag: v0.5.2
-- repository: prometheus-operator/prometheus-operator
-  host: quay.io
-  tag: v0.54.1
-- repository: kiwigrid/k8s-sidecar
-  host: quay.io
-  tag: 1.15.6
-- repository: grafana/grafana
-  tag: 8.3.6
-- repository: prometheus/prometheus
-  host: quay.io
-  tag: v2.33.4
-- repository: prometheus/alertmanager
-  host: quay.io
-  tag: v0.23.0
+
+# Thanos
 - repository: thanos/thanos
   host: quay.io
   tag: v0.24.0
-- repository: coredns/coredns
-  host: docker.io
-  tag: 1.8.7
