@@ -29,6 +29,22 @@ sources:
   host: k8s.gcr.io
   tag: v1.1.1
 
+# k8scloudprovider
+- repository: k8scloudprovider/openstack-cloud-controller-manager
+  tag: v1.23.1
+- repository: k8scloudprovider/barbican-kms-plugin
+  tag: v1.23.0
+- repository: k8scloudprovider/cinder-csi-plugin
+  tag: v1.23.0
+- repository: k8scloudprovider/k8s-keystone-auth
+  tag: v1.23.0
+- repository: k8scloudprovider/magnum-auto-healer
+  tag: v1.23.0
+- repository: k8scloudprovider/manila-csi-plugin
+  tag: v1.23.0
+- repository: k8scloudprovider/octavia-ingress-controller
+  tag: v1.23.0
+
 # k8s-sidecar
 - repository: kiwigrid/k8s-sidecar
   host: quay.io
