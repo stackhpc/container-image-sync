@@ -90,3 +90,11 @@ sources:
 - repository: thanos/thanos
   host: quay.io
   tag: v0.24.0
+
+# K8S SIG Storage/Cinder CSI
+- repository: sig-storage/livenessprobe
+  host: k8s.gcr.io
+  tag: v2.5.0
+- repository: sig-storage/csi-node-driver-registrar
+  host: k8s.gcr.io
+  tag: v2.4.0
