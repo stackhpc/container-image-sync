@@ -98,3 +98,12 @@ sources:
 - repository: sig-storage/csi-node-driver-registrar
   host: k8s.gcr.io
   tag: v2.4.0
+- repository: sig-storage/csi-snapshotter
+  host: k8s.gcr.io
+  tag: v4.2.1
+- repository: sig-storage/csi-resizer
+  host: k8s.gcr.io
+  tag: v1.3.0
+- repository: sig-storage/csi-attacher
+  host: k8s.gcr.io
+  tag: v3.3.0
