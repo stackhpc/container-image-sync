@@ -28,6 +28,9 @@ sources:
 - repository: ingress-nginx/kube-webhook-certgen
   host: k8s.gcr.io
   tag: v1.1.1
+- repository: ingress-nginx/controller
+  host: k8s.gcr.io
+  tag: v1.1.2
 
 # k8scloudprovider
 - repository: k8scloudprovider/openstack-cloud-controller-manager
