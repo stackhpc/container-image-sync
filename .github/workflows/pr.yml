@@ -28,8 +28,8 @@ jobs:
        - name: Checkout container-image-sync
          uses: actions/checkout@master
 
-       - name: Run sinker check
-         run: ../sinker check
+#       - name: Run sinker check
+#         run: ../sinker check
 
        - name: Run sinker push (dry-run)
          run: ../sinker push --dryrun
