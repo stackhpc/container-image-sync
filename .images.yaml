@@ -134,3 +134,6 @@ sources:
 - repository: sig-storage/csi-attacher
   host: k8s.gcr.io
   tag: v3.3.0
+- repository: sig-storage/csi-provisioner
+  host: k8s.gcr.io
+  tag: v3.0.0
