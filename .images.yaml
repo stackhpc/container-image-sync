@@ -86,7 +86,8 @@ sources:
   tag: v1.22.0
 - repository: openstackmagnum/cluster-autoscaler
   tag: v1.23.0
-- repository: openstackmagnum/cluster-autoscaler
+- repository: autoscaling/cluster-autoscaler:v1.23.1
+  host: k8s.gcr.io
   tag: v1.23.1
 
 # Prometheus
