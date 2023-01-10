@@ -86,6 +86,8 @@ sources:
   tag: v1.22.0
 - repository: openstackmagnum/cluster-autoscaler
   tag: v1.23.0
+- repository: openstackmagnum/cluster-autoscaler
+  tag: v1.23.1
 
 # Prometheus
 - repository: prometheus/alertmanager
