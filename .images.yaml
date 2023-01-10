@@ -28,7 +28,7 @@ sources:
 # Conformance
 - repository: conformance
   host: registry.k8s.io
-  tag: 1.23.6
+  tag: v1.23.6
 
 # CoreDNS
 - repository: coredns/coredns
