@@ -34,6 +34,12 @@ sources:
 - repository: coredns/coredns
   host: docker.io
   tag: 1.8.7
+- repository: coredns/coredns
+  host: docker.io
+  tag: 1.9.4
+- repository: coredns/coredns
+  host: docker.io
+  tag: 1.10.0
 
 # etcd
 - repository: coreos/etcd
@@ -120,6 +126,9 @@ sources:
 - repository: rancher/hyperkube
   tag: v1.23.6-rancher1
   target_tag: v1.23.6
+- repository: rancher/hyperkube
+  tag: v1.23.15-rancher1
+  target_tag: v1.23.15
 
 # Thanos
 - repository: thanos/thanos
