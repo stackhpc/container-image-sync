@@ -135,6 +135,9 @@ sources:
 - repository: rancher/hyperkube
   tag: v1.26.7-rancher1
   target_tag: v1.26.7
+- repository: rancher/hyperkube
+  tag: v1.27.5-rancher1
+  target_tag: v1.27.5
 
 # Thanos
 - repository: thanos/thanos
