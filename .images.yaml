@@ -162,7 +162,7 @@ sources:
   target_tag: v1.27.5
 - repository: rancher/hyperkube
   host: docker.io
-  tag: v1.27.6
+  tag: v1.27.6-rancher1
   target_tag: v1.27.6
 
 # Thanos
