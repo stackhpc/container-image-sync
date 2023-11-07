@@ -24,6 +24,19 @@ sources:
   tag: v3.21.4
 - repository: calico/pod2daemon-flexvol
   tag: v3.21.4
+# v3.26.3
+- repository: calico/cni
+  host: docker.io
+  tag: v3.26.3
+- repository: calico/kube-controllers
+  host: docker.io
+  tag: v3.26.3
+- repository: calico/node
+  host: docker.io
+  tag: v3.26.3
+- repository: calico/pod2daemon-flexvol
+  host: docker.io
+  tag: v3.26.3
 
 # Conformance
 - repository: conformance
@@ -40,6 +53,9 @@ sources:
 - repository: coredns/coredns
   host: docker.io
   tag: 1.10.0
+- reposutory: coredns/coredns
+  host: docker.io
+  tag: 1.11.1
 
 # etcd
 - repository: coreos/etcd
@@ -48,10 +64,16 @@ sources:
 - repository: coreos/etcd
   host: quay.io
   tag: v3.5.4
+- repository: coreos/etcd
+  host: quay.io
+  tag: v3.5.10
 
 # Grafana
 - repository: grafana/grafana
   tag: 8.3.6
+- repository: grafana/grafana
+  host: docker.io
+  tag: 10.2.0
 
 # ingress-nginx
 - repository: ingress-nginx/kube-webhook-certgen
@@ -138,6 +160,10 @@ sources:
 - repository: rancher/hyperkube
   tag: v1.27.5-rancher1
   target_tag: v1.27.5
+- repository: rancher/hyperkube
+  host: docker.io
+  tag: v1.27.6
+  target_tag: v1.27.6
 
 # Thanos
 - repository: thanos/thanos
