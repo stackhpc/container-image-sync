@@ -84,33 +84,47 @@ sources:
   tag: v1.1.2
 
 # k8scloudprovider
+# OCCM
 - repository: k8scloudprovider/openstack-cloud-controller-manager
   tag: v1.23.1
-- repository: k8scloudprovider/openstack-cloud-controller-manager
+- repository: provider-os/openstack-cloud-controller-manager
+  host: registry.k8s.io
   tag: v1.27.3
+# barbican-kms-plugin
 - repository: k8scloudprovider/barbican-kms-plugin
   tag: v1.23.0
-- repository: k8scloudprovider/barbican-kms-plugin
+- repository: provider-os/barbican-kms-plugin
+  host: registry.k8s.io
   tag: v1.27.3
+# cinder-csi-plugin
 - repository: k8scloudprovider/cinder-csi-plugin
   tag: v1.23.0
-- repository: k8scloudprovider/cinder-csi-plugin
+- repository: provider-os/cinder-csi-plugin
+  host: registry.k8s.io
   tag: v1.27.3
+# k8s-keystone-auth
 - repository: k8scloudprovider/k8s-keystone-auth
   tag: v1.23.0
-- repository: k8scloudprovider/k8s-keystone-auth
+- repository: provider-os/k8s-keystone-auth
+  host: registry.k8s.io
   tag: v1.27.3
+# magnum-auto-healer
 - repository: k8scloudprovider/magnum-auto-healer
   tag: v1.23.0
-- repository: k8scloudprovider/magnum-auto-healer
+- repository: provider-os/magnum-auto-healer
+  host: registry.k8s.io
   tag: v1.27.3
+# manila-csi-plugin
 - repository: k8scloudprovider/manila-csi-plugin
   tag: v1.23.0
-- repository: k8scloudprovider/manila-csi-plugin
+- repository: provider-os/manila-csi-plugin
+  host: registry.k8s.io
   tag: v1.27.3
+# octavia-ingress-controller
 - repository: k8scloudprovider/octavia-ingress-controller
   tag: v1.23.0
-- repository: k8scloudprovider/octavia-ingress-controller
+- repository: provider-os/octavia-ingress-controller
+  host: registry.k8s.io
   tag: v1.27.3
 
 # k8s-sidecar
