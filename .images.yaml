@@ -229,9 +229,11 @@ sources:
   tag: v1.27.6-rancher1
   target_tag: v1.27.6
 # Gardener Hyperkube
-- repository: eu.gcr.io/gardener-project/hyperkube
+- repository: gardener-project/hyperkube
+  host: eu.gcr.io
   tag: v1.28.5
-- repository: eu.gcr.io/gardener-project/hyperkube
+- repository: gardener-project/hyperkube
+  host: eu.gcr.io
   tag: v1.29.0
 
 # Thanos
