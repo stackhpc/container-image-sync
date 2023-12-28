@@ -37,6 +37,19 @@ sources:
 - repository: calico/pod2daemon-flexvol
   host: docker.io
   tag: v3.26.3
+# v3.27.0
+- repository: calico/cni
+  host: docker.io
+  tag: v3.27.0
+- repository: calico/kube-controllers
+  host: docker.io
+  tag: v3.27.0
+- repository: calico/node
+  host: docker.io
+  tag: v3.27.0
+- repository: calico/pod2daemon-flexvol
+  host: docker.io
+  tag: v3.27.0
 
 # Conformance
 - repository: conformance
