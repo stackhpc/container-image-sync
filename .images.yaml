@@ -103,42 +103,63 @@ sources:
 - repository: provider-os/openstack-cloud-controller-manager
   host: registry.k8s.io
   tag: v1.27.3
+- repository: provider-os/openstack-cloud-controller-manager
+  host: registry.k8s.io
+  tag: v1.28.1
 # barbican-kms-plugin
 - repository: k8scloudprovider/barbican-kms-plugin
   tag: v1.23.0
 - repository: provider-os/barbican-kms-plugin
   host: registry.k8s.io
   tag: v1.27.3
+- repository: provider-os/barbican-kms-plugin
+  host: registry.k8s.io
+  tag: v1.28.1
 # cinder-csi-plugin
 - repository: k8scloudprovider/cinder-csi-plugin
   tag: v1.23.0
 - repository: provider-os/cinder-csi-plugin
   host: registry.k8s.io
   tag: v1.27.3
+- repository: provider-os/cinder-csi-plugin
+  host: registry.k8s.io
+  tag: v1.28.1
 # k8s-keystone-auth
 - repository: k8scloudprovider/k8s-keystone-auth
   tag: v1.23.0
 - repository: provider-os/k8s-keystone-auth
   host: registry.k8s.io
   tag: v1.27.3
+- repository: provider-os/k8s-keystone-auth
+  host: registry.k8s.io
+  tag: v1.28.1
 # magnum-auto-healer
 - repository: k8scloudprovider/magnum-auto-healer
   tag: v1.23.0
 - repository: provider-os/magnum-auto-healer
   host: registry.k8s.io
   tag: v1.27.3
+- repository: provider-os/magnum-auto-healer
+  host: registry.k8s.io
+  tag: v1.28.1
 # manila-csi-plugin
 - repository: k8scloudprovider/manila-csi-plugin
   tag: v1.23.0
 - repository: provider-os/manila-csi-plugin
   host: registry.k8s.io
   tag: v1.27.3
+- repository: provider-os/manila-csi-plugin
+  host: registry.k8s.io
+  tag: v1.28.1
 # octavia-ingress-controller
 - repository: k8scloudprovider/octavia-ingress-controller
   tag: v1.23.0
 - repository: provider-os/octavia-ingress-controller
   host: registry.k8s.io
   tag: v1.27.3
+- repository: provider-os/octavia-ingress-controller
+  host: registry.k8s.io
+  tag: v1.28.1
 
 # k8s-sidecar
 - repository: kiwigrid/k8s-sidecar
@@ -207,6 +228,11 @@ sources:
   host: docker.io
   tag: v1.27.6-rancher1
   target_tag: v1.27.6
+# Gardener Hyperkube
+- repository: eu.gcr.io/gardener-project/hyperkube
+  tag: v1.28.5
+- repository: eu.gcr.io/gardener-project/hyperkube
+  tag: v1.29.0
 
 # Thanos
 - repository: thanos/thanos
