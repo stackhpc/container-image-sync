@@ -228,6 +228,10 @@ sources:
   host: docker.io
   tag: v1.27.6-rancher1
   target_tag: v1.27.6
+- reposutory: rancher/hyperkube
+  host: docker.io
+  tag: v1.27.8-rancher2
+  target_tag: v1.27.8
 # Gardener Hyperkube
 - repository: gardener-project/hyperkube
   host: eu.gcr.io
