@@ -1,5 +1,21 @@
 target:
   host: ghcr.io
+  repository: stackhpc/calico
+  auth:
+    username: GHCR_USERNAME
+    password: GHCR_PASSWORD
+sources:
+# Calico
+# v3.27.0
+- repository: calico/typha
+  host: docker.io
+  tag: v3.27.0
+- repository: calico/pod2daemon-flexvol
+  host: docker.io
+  tag: v3.27.0
+
+target:
+  host: ghcr.io
   repository: stackhpc
   auth:
     username: GHCR_USERNAME
