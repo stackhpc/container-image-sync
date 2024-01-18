@@ -5,12 +5,51 @@ target:
     username: GHCR_USERNAME
     password: GHCR_PASSWORD
 sources:
-# Calico
-# v3.27.0
+# v3.25.2
+- repository: calico/cni
+  host: docker.io
+  tag: v3.25.2
+- repository: calico/kube-controllers
+  host: docker.io
+  tag: v3.25.2
+- repository: calico/node
+  host: docker.io
+  tag: v3.25.2
+- repository: calico/pod2daemon-flexvol
+  host: docker.io
+  tag: v3.25.2
 - repository: calico/typha
+  host: docker.io
+  tag: v3.25.2
+# v3.26.3
+- repository: calico/cni
+  host: docker.io
+  tag: v3.26.3
+- repository: calico/kube-controllers
+  host: docker.io
+  tag: v3.26.3
+- repository: calico/node
+  host: docker.io
+  tag: v3.26.3
+- repository: calico/pod2daemon-flexvol
+  host: docker.io
+  tag: v3.26.3
+- repository: calico/typha
+  host: docker.io
+  tag: v3.26.3
+# v3.27.0
+- repository: calico/cni
+  host: docker.io
+  tag: v3.27.0
+- repository: calico/kube-controllers
+  host: docker.io
+  tag: v3.27.0
+- repository: calico/node
   host: docker.io
   tag: v3.27.0
 - repository: calico/pod2daemon-flexvol
   host: docker.io
   tag: v3.27.0
-
+- repository: calico/typha
+  host: docker.io
+  tag: v3.27.0
