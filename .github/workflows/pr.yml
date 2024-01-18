@@ -34,3 +34,6 @@ jobs:
        - name: Run sinker push (dry-run)
          run: ../sinker push --dryrun
          continue-on-error: true
+
+       - name: Run sinker push with magic manifest
+         run: ../sinker push --manifest .tigera.yml
