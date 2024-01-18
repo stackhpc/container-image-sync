@@ -36,4 +36,4 @@ jobs:
          continue-on-error: true
 
        - name: Run sinker push with magic manifest
-         run: ../sinker push --manifest .tigera.yml
+         run: ../sinker push --manifest .tigera.yaml
