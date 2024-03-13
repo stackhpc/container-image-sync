@@ -19,8 +19,8 @@ jobs:
        - name: Checkout sinker 
          uses: actions/checkout@master
          with:
-           repository: mnasiadka/sinker
-           ref: refs/heads/target-tag
+           repository: stackhpc/sinker
+           ref: refs/heads/stackhpc
 
        - name: Install sinker
          run: make build && cp ./sinker ../
